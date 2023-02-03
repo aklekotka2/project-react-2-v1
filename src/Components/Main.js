@@ -25,7 +25,7 @@ const Main = () => {
 
 	function createList(currency) {
 		if (amountVal > 0) {
-			currency.filter((elem) => {
+			currency.forEach((elem) => {
 				if (elem.code === currencyVal) {
 					setExchangeValue((elem.mid * amountVal).toFixed(2));
 				}
